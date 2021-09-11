@@ -105,14 +105,18 @@ ul {
   transition: background-color 250ms linear;
 }
 
+.header-item :hover {
+  color: var(--accent-color);
+}
+
 .header-link:hover::after {
   background-color: #2196f3;
 }
 
-.link:hover use,
-.link:focus use,
-.link:hover,
-.link:focus {
+.header-contact-item :hover use,
+.header-contact-item :focus use,
+.header-contact-item :hover,
+.header-contact-item :focus {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -417,6 +421,7 @@ ul {
   line-height: 1.7;
   letter-spacing: 3%;
   color: var(--secondary-text-color);
+  transition: color 250ms linear;
 }
 
 .contact-item-mail {
@@ -425,14 +430,21 @@ ul {
   line-height: 1.7;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms linear;
 }
 
 .contact-item-tel {
+  line-height: 1.7;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms linear;
+}
+
+.contact-item :hover,
+.contact-item :focus {
+  color: var(--accent-color);
 }
 
 /*---join----*/
@@ -455,7 +467,6 @@ ul {
 
 .join-list {
   display: flex;
-  align-items: center;
 }
 .join-item {
   width: 44px;
@@ -468,6 +479,7 @@ ul {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms linear;
@@ -514,6 +526,8 @@ ul {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
+
+/*--------GALLERY---------*/
 
 .gallery {
   padding-bottom: 94px;
